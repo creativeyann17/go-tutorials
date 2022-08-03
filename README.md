@@ -19,6 +19,20 @@ Best practices:
 - `interface{} <=> any`
 - design functions/methods to receive interfaces
 
+# Modules
+This is the name of the module, no folders will be created:
+```
+go mod init github.com/creativeyann17/tutorials/modules
+```
+Download deps:
+```
+go get gonum.org/v1/gonum/stat 
+```
+Update/Reset modules, based on the current imports:
+```
+go mod tidy
+```
+
 # Gorountines
 
 `go run -race main.go` will detect when variables in race condition
