@@ -19,7 +19,7 @@ func main() {
 	robots()
 	//server()	// try to start the program twice and it will trigger the panic
 
-	defer func() {
+	defer func() {	// will 'save' the state of params u pass to the func
 		if err := recover(); err !=nil {
 			log.Println("Error: ", err)
 			panic(err)	// if u don't know what to do with that error <=> re-throw
