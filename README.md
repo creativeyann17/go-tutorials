@@ -33,6 +33,12 @@ Update/Reset modules, based on the current imports:
 go mod tidy
 ```
 
+# Tests
+Verbos + Cover (noth optional)
+```
+go test -v --cover
+```
+
 # Gorountines
 
 `go run -race main.go` will detect when variables in race condition
