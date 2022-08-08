@@ -38,6 +38,10 @@ Verbos + Cover (noth optional)
 ```
 go test -v --cover
 ```
+Benchmark
+```
+go test -bench=.
+```
 
 # Gorountines
 
