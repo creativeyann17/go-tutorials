@@ -1,6 +1,25 @@
 # Formation
 https://www.youtube.com/watch?v=YS4e4q9oBaU&t=274s
 
+# Setup workspace
+
+Best way to *go* is to have a single workspace for all the go projects
+
+In `./zshrc` add the following:
+
+```
+export GOROOT=~/Programs/go-1.19.3
+export GOPATH=~/Workspaces/go
+export GO111MODULE=auto
+```
+
+Init the workspace and add projects:
+
+```
+go work init
+go work use go-tutorials project1 project2 ...
+```
+
 # Copy vs Reference
 
 *Copy*
